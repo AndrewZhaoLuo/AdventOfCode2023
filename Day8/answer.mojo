@@ -156,5 +156,20 @@ fn main() raises:
         Start Index: 10711 Steps: 18559 Final Node: 10711
         Start Index: 13259 Steps: 19667 Final Node: 13259
         Start Index: 17575 Steps: 21883 Final Node: 17575
+
+        A Proper way is to note given a1, b1, a2, b2 we want to find n1 and n2 s.t.
+
+        a1 + n1 * b1 = a2 + n2 * b2 = C
+
+        We solve for n1 / n2
+
+        Now we need to connect to a3, b3:
+
+        C = a3 + n3 * b3
+
+        a3 + n3 * b3 must be a multiple of C, so we can solve for n3, let the new quantity be D
+        ...
+
+        So on in so forth... for the case of general a1 and b1 (aka they are not equal)
         '''
         part2(problem)
